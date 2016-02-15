@@ -1,5 +1,6 @@
 accounts-base@1.2.2
 accounts-facebook@1.0.6
+accounts-github@1.0.6
 accounts-google@1.0.6
 accounts-oauth@1.1.8
 accounts-password@1.1.4
@@ -68,6 +69,7 @@ fastclick@1.0.7
 favorites@0.0.4
 fortawesome:fontawesome@4.5.0
 geojson-utils@1.0.4
+github@1.1.4
 google@1.1.7
 handlebars@1.0.4
 hot-code-push@1.0.0
