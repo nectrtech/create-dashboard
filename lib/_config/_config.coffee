@@ -4,15 +4,17 @@
 @Config =
 
 	# Basic Details
-	name: 'My App'
+	company: 'Nectr Tech Inc.'
+	name: 'NectrCreate'
 	title: ->
 			TAPi18n.__ 'configTitle'
 	subtitle: ->
 			TAPi18n.__ 'configSubtitle'
 	logo: ->
-		'<b>' + @name + '</b>'
+		# '<b>' + @name + '</b>'
+		'<img class="logo" src="/img/logo-full.png" alt="NectrCreate Logo" data-sr="reset"/>'
 	footer: ->
-		@name + ' - Copyright ' + new Date().getFullYear()
+		'© ' + @company + ' ' + new Date().getFullYear()
 
 	# Emails
 	emails:
@@ -21,7 +23,7 @@
 
 	# Username - if true, users are forced to set a username
 	username: false
-	
+
 	# Localisation
 	defaultLanguage: 'en'
 	dateFormat: 'D/M/YYYY'

@@ -1,6 +1,6 @@
 /* Need to import variables.import.less directly.
    See https://github.com/less/less.js/issues/1359
-*/ 
+*/
 
 // Yeti 3.2.0
 // Variables
@@ -45,7 +45,7 @@
 //## Font, line-height, and color for body text, headings, and more.
 
 @font-family-sans-serif:  @font-family-default;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-serif:       @font-family-primary;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
@@ -67,8 +67,8 @@
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    @font-family-base;
-@headings-font-weight:    300;
+@headings-font-family:    @font-family-sans-serif;
+@headings-font-weight:    200;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -847,5 +847,3 @@
 @dl-horizontal-offset:        @component-offset-horizontal;
 //** Horizontal line color.
 @hr-border:                   #ddd;
-
-

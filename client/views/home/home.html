@@ -2,7 +2,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="row">
-                <a class="navbar-brand link" href="{{pathFor 'home'}}">{{Config.name}}</a>
+                <a class="navbar-brand link" href="{{pathFor 'home'}}"><img class="logo" src="/img/logo-full.png" alt="NectrCreate Logo"/></a>
                 <div id="main-nav" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         {{#if User}}
@@ -20,57 +20,64 @@
             </div>
         </div>
     </nav>
-    <section id="intro" class="colored text-center">
+    <section id="intro" class="colored text-center v-center" data-type="slider-item">
         <div class="container">
-            <div class="intro-well wow animated bounceIn">
+            <!-- <div class="intro-well wow animated bounceIn"> -->
                 <div class="row">
                     <div class="col-lg-12 col-sm-12">
+                        <div class="hero"></div>
                         <h1>{{Config.title}}</h1>
-                        <h2 class="hidden-xs">{{Config.subtitle}}</h2>
-                        {{#if User}}
+                        <h4>{{Config.subtitle}}</h4>
+                        <img class="arrow bounce" src="/img/arrow-thin.png" alt="Scroll Arrow" />
+                        <!-- {{#if User}}
                         <a href="{{pathFor 'dashboard'}}" class="btn btn-success"><i class="fa fa-dashboard"></i> {{_ "dashboard"}}</a>
                         {{else}}
                         <a class="btn btn-hollow" href="{{pathFor 'atSignUp'}}">{{_ "getstarted"}}</a>
-                        {{/if}}
+                        {{/if}} -->
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </section>
-    <section id="how-it-works" class="text-center">
-        <div class="container wow fadeIn animated">
-            <div class="row col-md-12">
-                <h3>{{_ "how"}}</h3>
-                <h4>{{Config.name}} - {{Config.subtitle}}</h4>
-            </div>
-        </div>
+    <section id="ipad" class="colored text-center" data-type="slider-item">
         <div class="container">
+          <div class="row col-md-12 col-sm-12">
+              <h1>{{_ "section_1_header"}}</h1>
+              <!-- <h4>{{Config.name}} - {{Config.subtitle}}</h4> -->
+              <h5>{{_ "section_1_text"}}</h5>
+          </div>
             <div class="row" id="icon-row">
-                <div class="col-md-4 wow fadeInUp animated" data-wow-delay="0.4s">
+                <div class="col-md-4 col-sm-4">
+                    <h1 class="icntitle">1. {{_ "step_1"}}</h1>
                     <div class="iconbox">
-                        <i class="fa fa-plane fa-3x"></i>
+                        <!-- <i class="fa fa-plane fa-3x"></i> -->
+                        <img id="item" src="/img/code-example_1.png" alt="">
                     </div>
-                    <h2 class="icntitle">1. {{_ "step_1"}}</h2>
-                    <p class="icnp">{{_ "step_1_text"}}</p>
+
+                    <!-- <p class="icnp">{{_ "step_1_text"}}</p> -->
                 </div>
-                <div class="col-md-4 wow fadeInUp animated" data-wow-delay="0.8s">
+                <div class="col-md-4 col-sm-4">
+                    <h1 class="icntitle">2. {{_ "step_2"}}</h1>
                     <div class="iconbox">
-                        <i class="fa fa-bolt fa-3x"></i>
+                        <!-- <i class="fa fa-bolt fa-3x"></i> -->
+                        <img id="item" src="/img/code-example_2.png" alt="">
                     </div>
-                    <h2 class="icntitle">2. {{_ "step_2"}}</h2>
-                    <p class="icnp">{{_ "step_2_text"}}</p>
+
+                    <!-- <p class="icnp">{{_ "step_2_text"}}</p> -->
                 </div>
-                <div class="col-md-4 wow fadeInUp animated" data-wow-delay="1.2s">
+                <div class="col-md-4 col-sm-4">
+                    <h1 class="icntitle">3. {{_ "step_3"}}</h1>
                     <div class="iconbox">
-                        <i class="fa fa-check fa-3x"></i>
+                        <!-- <i class="fa fa-check fa-3x"></i> -->
+                        <img id="item" src="/img/code-example_5.png" alt="">
                     </div>
-                    <h2 class="icntitle">3. {{_ "step_3"}}</h2>
-                    <p class="icnp">{{_ "step_3_text"}}</p>
+
+                    <!-- <p class="icnp">{{_ "step_3_text"}}</p> -->
                 </div>
             </div>
         </div>
     </section>
-    <section id="ipad" class="colored text-center">
+    <!-- <section id="ipad" class="colored text-center">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
@@ -83,12 +90,56 @@
                     </p>
                 </div>
                 <div class="col-sm-6">
-                    <img id="ipad" src="/img/ipad.png" alt="" class="wow animated fadeInRight" data-wow-delay="1s">
+                    <img id="ipad" src="/img/code-example_1.png" alt="" class="wow animated">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="ipad" class="flipped" data-type="slider-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>{{_ "section_2_header"}}</h3>
+                    <p>{{_ "section_2_text"}}</p>
+                    <p class="text-center">
+                    <!-- <a href="{{Config.about}}" target="_blank" class="btn btn-success">
+                    {{_ "section_ipad_btn"}}
+                    </a> -->
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <img id="item" src="/img/integration-example.png" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <section id="final">
+    <section id="ipad" class="colored" data-type="slider-item">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>{{_ "section_3_header"}}</h3>
+                    <p>The <a target="_blank" href="#">Nectr cli tool</a> {{_ "section_3_text"}}</p>
+                    <p class="text-center">
+                      {{#if User}}
+                      <a href="{{pathFor 'dashboard'}}" class="btn btn-success"><i class="fa fa-dashboard"></i> {{_ "dashboard"}}</a>
+                      {{else}}
+                      <a class="btn btn-hollow" href="{{pathFor 'atSignUp'}}">{{_ "getstarted"}}</a>
+                      {{/if}}
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <img id="item" src="/img/free-pricing.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav>
+		<ul class="cd-vertical-nav">
+			<li><a href="#0" class="cd-prev inactive">Next</a></li>
+			<li><a href="#0" class="cd-next">Prev</a></li>
+		</ul> <!-- cd-vertical-nav -->
+	</nav>
+    <!-- <section id="final" class="colored">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center wow fadeInDown animated" data-wow-delay="0.8s">
@@ -104,5 +155,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 </template>
